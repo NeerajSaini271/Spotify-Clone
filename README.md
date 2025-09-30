@@ -29,3 +29,31 @@ This project is a front-end replica of the Spotify landing page and music player
 4. Optional: Use a local static server (e.g., `npx http-server`) to simulate hosting.
 
 ## Project Structure
+/
+├─ index.html
+├─ css/
+│ └─ styles.css
+├─ js/
+│ └─ app.js
+├─ img/
+│ └─ Spotify Clone.png
+└─ README.md
+
+
+## Responsive / Styling Notes
+- Layout uses CSS Grid and Flexbox for main player and playlists
+- Breakpoints implemented for tablets and mobile screens
+- Images and player elements scale fluidly (`max-width: 100%` and `height: auto`)
+- Text sizes use relative units (`rem` / `clamp()`) for better readability on smaller devices
+
+## Roadmap / Future Improvements
+- Add track search and dynamic playlist filtering
+- Implement more interactive UI elements (volume control, progress bar)
+- Enhance accessibility with ARIA labels and keyboard navigation
+- Optional: Integrate a backend for real audio streaming
+
+## License
+MIT
+
+## Resume Bullet
+- Developed a responsive Spotify landing/player clone using HTML, CSS, and JavaScript; implemented mobile-first design, interactive music controls, and semantic, maintainable code structure.
