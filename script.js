@@ -73,7 +73,7 @@ async function displayAlbums() {
 
   for (let folder of albumFolders) {
     // Get the metadata of the folder
-    let a = await fetch(`/Songs/${folder}/info.json`);
+    let a = await fetch(`/songs/${folder}/info.json`);
     let response = await a.json();
     cardContainer.innerHTML += `
       <div data-folder="${folder}" class="card">
@@ -83,7 +83,9 @@ async function displayAlbums() {
             <path d="M19 16L19 32L33 24L19 16Z" fill="black" />
           </svg>
         </div>
-        <img src="/Songs/${folder}/${response.cover}" alt="" />
+        <img src="/songs/${folder}/${response.cover}" 
+             alt="${response.title}" 
+             onerror="this.src='/img/cover.jpg'" />
         <h2>${response.title}</h2>
         <p>${response.description}</p>
       </div>`;
@@ -99,7 +101,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-  songs = await getSongs("Songs/Bollywood");
+  songs = await getSongs("Songs/Density & Time");
   playMusic(songs[0], true);
 
   displayAlbums();
