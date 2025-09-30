@@ -1,7 +1,7 @@
 # Spotify-Clone
 A responsive Spotify Clone built using HTML, CSS, and JavaScript with music playback and playlists.
 
-![Spotify Clone screenshot](img/Spotify%20Clone.png)
+![Spotify Clone screenshot](img/Spotify%20Clone.png).
 
 **Live demo:** https://spotify-clone-bm.netlify.app/
 
