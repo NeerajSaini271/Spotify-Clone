@@ -39,7 +39,6 @@ This project is a front-end replica of the Spotify landing page and music player
 │ └─ Spotify Clone.png
 └─ README.md
 
-
 ## Responsive / Styling Notes
 - Layout uses CSS Grid and Flexbox for main player and playlists
 - Breakpoints implemented for tablets and mobile screens
